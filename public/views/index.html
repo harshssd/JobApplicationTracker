@@ -1,0 +1,51 @@
+<!doctype html>
+<html ng-app="jobApp" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Job Application Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script type="text/javascript" src="/public/js/resume.js"></script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>Job Application Tracker</h1>
+    </div><!-- /header -->
+    <div data-role="content">
+        <div data-role="collapsible" data-theme="e" data-content-theme="b" ng-controller="ResumeController">
+            <h3>Maintain Resume</h3>
+            <div data-role="collapsible" data-theme="e" data-content-theme="b">
+                <h3>Objective</h3>
+                <form>
+                    <!--<label for="textarea">Textarea:</label>-->
+                    <textarea name="textarea" id="textarea" ng-model="resume.objective"></textarea>
+                    <input type="submit" data-role="button" data-theme="e" ng-click="saveObjective()" value="Save"/>
+                </form>
+            </div>
+            <!--<a href="#" data-role="button" data-icon="plus" data-theme="e">Objective</a>-->
+            <!--<a href="#" data-role="button" data-icon="plus" data-theme="e">Academics</a>-->
+            <div data-role="collapsible" data-theme="e" data-content-theme="b">
+                <h3>Academics</h3>
+                <a href="#" data-role="button" data-icon="plus" data-theme="e">Add</a>
+                <a href="#" data-role="button" data-icon="plus" data-theme="e">View</a>
+            </div>
+            <a href="#" data-role="button" data-icon="plus" data-theme="e">Work Experience</a>
+            <a href="#" data-role="button" data-icon="plus" data-theme="e">Projects</a>
+            <a href="#" data-role="button" data-icon="plus" data-theme="e">Skills</a>
+        </div>
+        <div data-role="collapsible" data-theme="e" data-content-theme="b">
+            <h3>List of Applications</h3>
+            <a href="#" data-role="button" data-icon="plus" data-theme="e">Add Company</a>
+            <a href="#" data-role="button" data-icon="plus" data-theme="e">Dream Opportunities</a>
+            <a href="applications.html" data-role="button" data-icon="plus" data-theme="e">View Application List</a>
+        </div>
+    </div><!-- /content -->
+    <div data-role="footer">
+        <h4>Developed by Harsha</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

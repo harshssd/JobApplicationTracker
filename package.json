@@ -1,0 +1,21 @@
+{
+  "name": "JobApplicationTracker",
+  "version": "0.0.0",
+  "description": "App to keep track of resume and job applications",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "job",
+    "application",
+    "resume",
+    "mobile"
+  ],
+  "author": "Harsha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.4.5",
+    "http": "0.0.0"
+  }
+}
